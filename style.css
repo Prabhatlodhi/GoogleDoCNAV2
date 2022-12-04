@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+.ring{
+    border: 10px solid red;
+}
+
+header{
+    border-bottom: 1px solid grey;
+    overflow-x: hidden;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.allicon .fa{
+    margin: 0px 15px;
+}
+
+.UnorderedList li{
+    list-style: none;
+    display: inline;
+    margin: 3px 5px;
+}
+
+#lastLi{
+    color: grey;
+    font-size: 14px;
+    margin-left: 10px;
+    text-decoration: underline;
+}
+
+.allUl{
+    display: inline;
+}
+
+.logo{
+    display: inline-block;
+    width: max-content;
+    position: relative;
+    bottom: 5px;
+    margin: 5px 10px;
+}
+
+.wrap{
+    width: max-content;
+    display: inline-block;
+}
+
+.heading{
+    display: inline-block;
+    width: max-content;
+    margin: 10px;
+    z-index: -1;
+}
+
+.heading p{
+    display: inline-block;
+    margin-left: 8px;
+    font-size: 18px;
+}
+
+ .allicon, .IconWrap{
+    display: inline-block;
+     
+ }
+
+ .allicon{
+    margin-bottom: 5px;
+ }
+
+  
+nav img{
+    width: 40px;
+    height: 40px;
+}
+
+.abso{
+    /* display: inline-block; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    
+    background: white;
+    z-index: 1;
+    
+    height: 80px;
+}
+
+.abso div{
+    vertical-align: middle;
+     
+    /* display: inline-block; */
+    margin: 2px 15px;
+}
+
+.abso button{
+    background-color: rgb(79, 79, 255);
+    color: white;
+    width: 100px;
+    height: 40px;
+    border-radius: 4px;
+    border:none;
+   
+}
+ 
+.fa-envelope-o{
+    margin-left: 80px;
+}
+
+.meeticon{
+    height: 40px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    padding: 2px;
+    
+}
+
+ 
+#jiji{
+
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 25px;
+}
+ 
+
+.meeticon img{
+    
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+    /* position: relative;
+    bottom: 15px; */
+
+}
+
+ 
+
+
+
+ .MobileList{
+    display: none;
+ }
+
+.gygy{
+    float: right;
+    display: block;
+    width: 150px;
+}
+
+ 
+
+
+
+.MobileLi li{
+    list-style: none;
+    padding: 15px;
+
+}
+
+ 
+
+.MobileLi li:hover{
+    background-color: grey;
+
+}
+
+.imagelogo img{
+    border-radius: 50%;
+}
+
+
+@media screen and  (min-width:850px) and (max-width:1300px) {
+
+    .abso{
+        box-shadow:  -8px 0 10px -6px #000000;
+    }
+
+    .gygy{
+        display: none;
+    }
+}
+
+@media screen and (max-width:821px) {
+
+    .IconWrap{
+        display: none;
+    }
+
+    #jiji{
+        display: block;
+    }
+
+    .gygy{
+        float: right;
+        display: block;
+    }
+
+    .fa-envelope-o{
+        margin-left: 0px;
+    }
+
+     
+
+
+    .abso{
+        display: flex;
+        width: 100%;
+        border: 1px solid gray;
+        border-radius: 5px;
+        position: fixed;
+        top: 600px;
+        left: 4px;
+        margin-right: 5rem;
+    }
+
+     
+
+}
